@@ -190,3 +190,5 @@ footer a { color: var(--ink2); }
 @keyframes confetti { to { transform: translate(var(--x), 110vh) rotate(calc(var(--r) + 540deg)); opacity: .9; } }
 .confetti.still i { animation: confettiFade 3.5s ease forwards !important; top: var(--y); transform: rotate(var(--r)); }
 @keyframes confettiFade { 0% { opacity: 0; } 10% { opacity: .95; } 75% { opacity: .95; } 100% { opacity: 0; } }
+.faq-g { font-size: 22px; color: var(--fire); margin: 32px 0 12px; }
+.faq-more { margin-top: 20px; }
