@@ -32,30 +32,53 @@
   // Música (Web Audio, sense fitxers): una melodia nocturna suau en bucle.
   const btn = document.getElementById('musicBtn');
   if (!btn) return;
-  let ctx = null, timer = null, on = false;
-  const NOTES = [57, 60, 64, 67, 64, 60, 62, 65, 69, 65, 62, 59, 55, 59, 62, 64]; // MIDI
+  // Melodia suau: notes greus i espaiades, atac lent, filtre que treu els aguts i un eco lleuger.
+  let ctx = null, out = null, timer = null, on = false;
+  const MEL = [64, null, 67, null, 69, null, 67, 64, null, 62, null, 60, null, null, 62, null]; // MIDI, null = silenci
+  const PAD = [[48, 55, 60], [45, 52, 57], [41, 48, 53], [43, 50, 55]];
+  const STEP = 0.75; // segons per pas (lent)
   const freq = (m) => 440 * Math.pow(2, (m - 69) / 12);
-  function note(m, t, len, vol) {
+  function setup() {
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 1400; lp.Q.value = 0.3;
+    const delay = ctx.createDelay(); delay.delayTime.value = 0.38;
+    const fb = ctx.createGain(); fb.gain.value = 0.28;
+    const wet = ctx.createGain(); wet.gain.value = 0.25;
+    out = ctx.createGain(); out.gain.value = 0;
+    out.connect(lp); lp.connect(ctx.destination);
+    lp.connect(delay); delay.connect(fb); fb.connect(delay); delay.connect(wet); wet.connect(ctx.destination);
+  }
+  function note(m, t, len, vol, attack) {
     const o = ctx.createOscillator(), g = ctx.createGain();
     o.type = 'sine'; o.frequency.value = freq(m);
     g.gain.setValueAtTime(0, t);
-    g.gain.linearRampToValueAtTime(vol, t + 0.04);
+    g.gain.linearRampToValueAtTime(vol, t + attack);
     g.gain.exponentialRampToValueAtTime(0.0001, t + len);
-    o.connect(g).connect(ctx.destination);
-    o.start(t); o.stop(t + len + 0.05);
+    o.connect(g).connect(out);
+    o.start(t); o.stop(t + len + 0.1);
   }
   function bar() {
-    const t0 = ctx.currentTime + 0.05, step = 0.42;
-    NOTES.forEach((m, i) => note(m + 12, t0 + i * step, 1.1, 0.05));
-    [45, 48, 43, 47].forEach((m, i) => note(m, t0 + i * step * 4, step * 4.2, 0.035));
+    const t0 = ctx.currentTime + 0.1;
+    MEL.forEach((m, i) => { if (m) note(m, t0 + i * STEP, 2.2, 0.022, 0.12); });
+    PAD.forEach((ch, i) => ch.forEach((m) => note(m, t0 + i * STEP * 4, STEP * 4.4, 0.012, 1.2)));
   }
   function start() {
-    ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+    if (!ctx) setup();
     ctx.resume();
+    out.gain.cancelScheduledValues(ctx.currentTime);
+    out.gain.setValueAtTime(out.gain.value, ctx.currentTime);
+    out.gain.linearRampToValueAtTime(1, ctx.currentTime + 2.5); // entra a poc a poc
     bar();
-    timer = setInterval(bar, 0.42 * 16 * 1000);
+    timer = setInterval(bar, STEP * MEL.length * 1000);
   }
-  function stop() { clearInterval(timer); timer = null; ctx?.suspend(); }
+  function stop() {
+    clearInterval(timer); timer = null;
+    if (!ctx) return;
+    out.gain.cancelScheduledValues(ctx.currentTime);
+    out.gain.setValueAtTime(out.gain.value, ctx.currentTime);
+    out.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.8);
+    setTimeout(() => { if (!on) ctx.suspend(); }, 900);
+  }
   btn.addEventListener('click', () => {
     on = !on;
     on ? start() : stop();
