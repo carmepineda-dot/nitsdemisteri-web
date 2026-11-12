@@ -3,6 +3,11 @@
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // En tornar a carregar, el navegador recupera on s'havia quedat (p. ex. al poblat).
+  // A la portada volem començar sempre a dalt, tret que l'enllaç porti a una secció (#...).
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (!location.hash) window.scrollTo(0, 0);
+
   // Aparició en fer scroll
   const els = document.querySelectorAll('.reveal');
   if (!reduce && 'IntersectionObserver' in window) {
