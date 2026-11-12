@@ -7,6 +7,7 @@
 - Quan s'equivoca, detecta quin error ha fet i li explica com es fa; si l'error es repeteix, un mussol li ensenya un truc amb dibuixos.
 - Panell per a adults amb PIN: progrés per habilitats, errors treballats, límit de temps diari, fins a 6 germans.
 - Privacitat: no hi ha comptes ni analítica dins el joc; les dades es guarden al dispositiu.
+- Sense comptes ni correu electrònic; sense límits imposats (el límit de temps el decideixen els pares).
 - Model: descàrrega gratuïta amb la primera aventura completa; subscripció familiar opcional amb 14 dies de prova.
 - Estat (novembre 2026): en proves amb famílies; es publicarà a Google Play. Versions en castellà i per a iPhone/iPad previstes més endavant.
 

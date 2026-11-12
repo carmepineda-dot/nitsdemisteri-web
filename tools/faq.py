@@ -20,6 +20,7 @@ FAQ = [
  ]),
  ('Per a les famílies', [
   ("Té anuncis?", "No. Ni anuncis, ni enllaços a altres apps, ni res que distregui de jugar i aprendre."),
+  ("Cal crear un compte o donar un correu electrònic?", "No. No hi ha comptes ni registre: s'instal·la i es juga. Tampoc no hi ha límits imposats per l'app: si voleu un límit de temps diari, el poseu vosaltres des del panell d'adults."),
   ("És gratuït?", "La descàrrega és gratuïta i la primera aventura completa es pot jugar sense pagar, amb tot el sistema d'aprenentatge (adaptació al nivell, explicació dels errors i trucs del mussol). Les altres aventures, el poblat complet i el joc per a diversos germans formaran part d'una subscripció familiar opcional, que es podrà provar 14 dies gratis. Les compres només es poden fer des del panell d'adults, protegit amb PIN."),
   ("Puc veure com avança el meu fill o la meva filla?", "Sí. El panell d'adults (amb PIN) mostra el nivell de cada habilitat, quins errors s'estan treballant i quins ja s'han superat. Si a casa hi ha diversos germans, es veuen tots alhora."),
   ("Es pot limitar el temps de joc?", "Sí. Al panell d'adults es pot posar un límit de minuts al dia. Quan s'acaba, el joc ho diu amb calma i es pot continuar l'endemà; si cal, s'hi poden afegir 15 minuts més."),
@@ -38,7 +39,7 @@ FAQ = [
 def strip(t): return re.sub(r'<[^>]+>', '', t)
 
 # Preguntes que surten també a la portada (la resta, a /preguntes/)
-HOME = ["Què és Nits de Misteri?", "Què passa quan s'equivoca?", "És gratuït?", "Té anuncis?", "On es pot descarregar?"]
+HOME = ["Què és Nits de Misteri?", "Què passa quan s'equivoca?", "És gratuït?", "Cal crear un compte o donar un correu electrònic?", "On es pot descarregar?"]
 ALL = {q: a for _, items in FAQ for q, a in items}
 
 def details(q, a): return f'    <details><summary>{html.escape(q)}</summary><p>{a}</p></details>'
