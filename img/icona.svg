@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+  <!-- Icona: lluna, estrelles i una caseta amb la finestra encesa (de nit, enigmes; de dia, el poblat) -->
+  <defs>
+    <radialGradient id="cel" cx="50%" cy="35%" r="75%"><stop offset="0" stop-color="#2a3a6e"/><stop offset="1" stop-color="#0d1526"/></radialGradient>
+  </defs>
+  <rect class="bg" width="108" height="108" fill="url(#cel)"/>
+  <g class="fg">
+    <circle cx="35" cy="34" r="1.6" fill="#fff" opacity=".85"/>
+    <circle cx="75" cy="30" r="1.2" fill="#fff" opacity=".7"/>
+    <circle cx="70" cy="46" r="1" fill="#fff" opacity=".6"/>
+    <path d="M58 26a17 17 0 1 0 12 28A13.5 13.5 0 0 1 58 26z" fill="#f5e9c4"/>
+    <path d="M44 31l1.6 3.4 3.7.5-2.7 2.6.7 3.7-3.3-1.8-3.3 1.8.7-3.7-2.7-2.6 3.7-.5z" fill="#ffd36b"/>
+    <path d="M28 82V66l14-11 14 11v16z" fill="#c98a4b"/>
+    <path d="M25 67l17-14 17 14" stroke="#c0504d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="38" y="66" width="8" height="8" rx="1.2" fill="#ffd36b"/>
+    <path d="M22 82h64" stroke="#3f7a3a" stroke-width="4" stroke-linecap="round"/>
+    <rect x="72" y="70" width="4" height="12" rx="1" fill="#7a4b2a"/>
+    <circle cx="74" cy="65" r="9" fill="#2f6b3a"/>
+  </g>
+</svg>
