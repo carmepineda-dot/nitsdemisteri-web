@@ -130,3 +130,4 @@ footer a { color: var(--ink2); }
 .repte dt { font-weight: 800; color: var(--ink); font-size: 15px; }
 .repte dd { margin: 0; color: var(--ink2); font-size: 16px; }
 @media (max-width: 600px) { .repte dl { grid-template-columns: 1fr; } .repte dd { margin-bottom: 8px; } }
+.cta-ic { width: 40px; height: 40px; border-radius: 10px; }

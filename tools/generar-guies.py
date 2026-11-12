@@ -158,8 +158,8 @@ HEAD = '''<!doctype html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="https://nitsdemisteri.cat/{path}">
-<meta property="og:image" content="https://nitsdemisteri.cat/img/og.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://nitsdemisteri.cat/img/og-icona.jpg">
+<meta name="twitter:card" content="summary">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="icon" href="/img/icona.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/site.css">
@@ -186,7 +186,7 @@ for g in GUIES:
     path = f"guies/{g['slug']}/"
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": g['title'], "description": g['desc'], "inLanguage": "ca",
           "datePublished": DATE, "dateModified": DATE, "author": {"@type": "Person", "name": "Carme Pineda"},
-          "publisher": {"@type": "Person", "name": "Carme Pineda"}, "image": "https://nitsdemisteri.cat/img/og.jpg",
+          "publisher": {"@type": "Person", "name": "Carme Pineda"}, "image": "https://nitsdemisteri.cat/img/og-icona.jpg",
           "mainEntityOfPage": f"https://nitsdemisteri.cat/{path}"}
     crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Inici", "item": "https://nitsdemisteri.cat/"},
