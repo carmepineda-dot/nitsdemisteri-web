@@ -182,3 +182,9 @@ footer a { color: var(--ink2); }
 .village-sec { background: linear-gradient(180deg, var(--bg2), #10241f); }
 .village-vid { margin: 0; border-radius: 22px; overflow: hidden; border: 5px solid #0a0f1c; box-shadow: 0 16px 40px rgba(0, 0, 0, .4); }
 .village-vid video { display: block; width: 100%; height: auto; }
+
+/* Confeti */
+.confetti { position: fixed; inset: 0; pointer-events: none; z-index: 60; overflow: hidden; }
+.confetti i { position: absolute; top: -20px; width: 10px; height: 14px; border-radius: 2px; opacity: .95; animation: confetti linear forwards; }
+.confetti i:nth-child(3n) { width: 8px; height: 8px; border-radius: 50%; }
+@keyframes confetti { to { transform: translate(var(--x), 110vh) rotate(calc(var(--r) + 540deg)); opacity: .9; } }

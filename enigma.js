@@ -21,6 +21,16 @@
     },
   ];
   let i = 0, score = 0;
+  // Confeti quan s'encerten els tres (com al final d'una aventura del joc)
+  function confetti() {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const c = document.createElement('div');
+    c.className = 'confetti'; c.setAttribute('aria-hidden', 'true');
+    const cols = ['#ffd36b', '#ff8fa3', '#7ee0ff', '#5dbb63', '#c3b2ff', '#ffb547'];
+    c.innerHTML = Array.from({ length: 70 }, (_, k) => `<i style="left:${(k * 37) % 100}%;background:${cols[k % cols.length]};animation-delay:${(k % 10) * 0.12}s;animation-duration:${2.2 + (k % 5) * 0.35}s;--x:${((k * 53) % 120) - 60}px;--r:${(k * 47) % 360}deg"></i>`).join('');
+    document.body.appendChild(c);
+    setTimeout(() => c.remove(), 5000);
+  }
   const shuffle = (a) => a.map((x) => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map((x) => x[1]);
 
   function render() {
@@ -32,6 +42,7 @@
       box.innerHTML = `<p class="pq-k">Resultat</p><p class="pq-score">${score} de ${Q.length}</p><p class="pq-q">${msg}</p>
         <button type="button" class="pq-again">Torna-hi</button>`;
       box.querySelector('.pq-again').onclick = () => { i = 0; score = 0; render(); };
+      if (score === Q.length) confetti();
       return;
     }
     const it = Q[i];

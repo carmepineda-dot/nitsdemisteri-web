@@ -162,8 +162,8 @@ HEAD = '''<!doctype html>
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="icon" href="/img/icona.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/site.css?v=202611121948">
-<script src="/consent.js?v=202611121948" defer></script>
+<link rel="stylesheet" href="/site.css?v=202611121950">
+<script src="/consent.js?v=202611121950" defer></script>
 {ld}
 </head>
 <body>
