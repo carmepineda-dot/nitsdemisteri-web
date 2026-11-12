@@ -5,9 +5,9 @@
   if (!box) return;
   const Q = [
     {
-      k: '2n de primària', q: 'Al mercat compres una poma de <b>35 cèntims</b> i un pa de <b>48 cèntims</b>. Quant pagues?',
-      ok: '83 cèntims',
-      opts: [['83 cèntims', ''], ['73 cèntims', "T'has deixat la desena que es porta: 5 + 8 = 13, i aquella desena de més s'ha de sumar a les desenes."], ['713 cèntims', 'Has escrit 7 i 13 un al costat de l\'altre: les 13 unitats són 1 desena i 3 unitats.'], ['13 cèntims', 'Només has sumat les unitats (5 + 8). Falten les desenes: 30 + 40.']],
+      k: '3r de primària', q: 'El rellotge del campanar marca <b>tres quarts de sis</b>. Quina hora és?',
+      ok: '17:45',
+      opts: [['17:45', ''], ['18:45', "És l'error més habitual! En català es compten els quarts que han passat cap a l'hora que ve: tres quarts de sis vol dir que falta un quart per a les sis."], ['18:15', "Seria un quart de set. Tres quarts de sis és quan falta un quart per a les sis."], ['15:30', "Has llegit els nombres al revés. Tres quarts (45 minuts) camí de les sis: les 17:45."]],
     },
     {
       k: '4t de primària', q: 'Quin tros de pizza és més gran: <b>1/4</b> o <b>1/8</b>?',
