@@ -27,12 +27,13 @@
 <link rel="preload" href="/fonts/fredoka-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/site.css">
 <script src="/consent.js" defer></script>
+<script src="/fx.js" defer></script>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/"><img src="/img/icona-192.png" alt="" width="36" height="36">Nits de Misteri</a>
-    <nav aria-label="Seccions"><a href="#com-funciona">Com funciona</a><a href="/reptes/">Els reptes</a><a href="/guies/">Guies</a><a href="#preguntes">Preguntes</a></nav>
+    <div class="right"><nav aria-label="Seccions"><a href="#com-funciona">Com funciona</a><a href="/reptes/">Els reptes</a><a href="/guies/">Guies</a><a href="#preguntes">Preguntes</a></nav><button class="music-btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Engega la música"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l11-2v12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.6" fill="currentColor"/><circle cx="17.5" cy="16" r="2.6" fill="currentColor"/><path class="slash" d="M3 3l18 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button></div>
   </div>
 </header>
 
@@ -54,11 +55,11 @@
 
 <section id="com-funciona">
   <div class="wrap">
-    <div class="intro center">
+    <div class="intro center reveal">
       <h2>De nit, enigmes. De dia, el teu poblat.</h2>
       <p>Cada aventura dura 12 nits: un bosc encantat, la muntanya del drac, el llac de les encantades, la cova dels cristalls o la cala dels pirates. Cada nit hi ha un repte de mates. Amb el que guanya, l'infant construeix el seu refugi i després el seu poblat.</p>
     </div>
-    <div class="grid3">
+    <div class="grid3 reveal">
       <div class="card"><div class="ico" aria-hidden="true">🌙</div><h3>Reptes variats</h3><p>Enigmes amb història, càlcul ràpid, rellotge, balança, sèries, simetria, probabilitat, fraccions… i reptes de manipular: pagar amb monedes, repartir o construir nombres.</p></div>
       <div class="card"><div class="ico" aria-hidden="true">🦉</div><h3>Aprèn dels errors</h3><p>Si s'equivoca, el joc li explica quin error ha fet i com es fa. Si un error es repeteix, el mussol li ensenya un truc amb dibuixos.</p></div>
       <div class="card"><div class="ico" aria-hidden="true">🏡</div><h3>Ganes de tornar</h3><p>Cada peça guanyada es veu al poblat: cases, animals i records de cada aventura. Un llibre d'encanteris es fa més fort com més practica.</p></div>
@@ -70,14 +71,14 @@
 <section class="alt">
   <div class="wrap center">
     <h2>Al seu ritme, al seu curs</h2>
-    <ul class="courses" aria-label="Cursos"><li>1r</li><li>2n</li><li>3r</li><li>4t</li><li>5è</li><li>6è</li></ul>
+    <ul class="courses reveal" aria-label="Cursos"><li>1r</li><li>2n</li><li>3r</li><li>4t</li><li>5è</li><li>6è</li></ul>
     <p class="intro">Els continguts segueixen el currículum de matemàtiques de primària de Catalunya. Cada habilitat (rellotge, càlcul, fraccions, geometria…) puja o baixa de nivell per separat, segons com respon l'infant. Mai no se li posen reptes per sobre del seu curs.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="shots" tabindex="0" aria-label="Captures del joc">
+    <div class="shots reveal" tabindex="0" aria-label="Captures del joc">
       <figure><img src="/img/profile.webp" alt="Pantalla per crear el personatge: nom, estil de dibuix i curs" width="540" height="1168" loading="lazy"><figcaption>Crea el teu personatge</figcaption></figure>
       <figure><img src="/img/night.webp" alt="Camí de les 12 nits de l'aventura del bosc encantat" width="540" height="1168" loading="lazy"><figcaption>12 nits d'aventura</figcaption></figure>
       <figure><img src="/img/coins.webp" alt="Repte de pagar el preu just posant monedes al moneder" width="540" height="1168" loading="lazy"><figcaption>Mans a la feina</figcaption></figure>
@@ -87,7 +88,7 @@
 </section>
 
 <section id="families" class="alt">
-  <div class="wrap grid2">
+  <div class="wrap grid2 reveal">
     <div>
       <h2>Pensat per a les famílies</h2>
       <ul class="list">
