@@ -21,14 +21,14 @@
     },
   ];
   let i = 0, score = 0;
-  // Confeti quan s'encerten els tres (com al final d'una aventura del joc)
-  function confetti() {
+  // Confeti: una mica a cada encert i molt si s'encerten els tres (com al final d'una aventura del joc)
+  function confetti(n = 70) {
     // Amb «reduir moviment» activat al dispositiu, el confeti surt quiet i s'esvaeix (sense caure).
     const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const c = document.createElement('div');
     c.className = 'confetti' + (still ? ' still' : ''); c.setAttribute('aria-hidden', 'true');
     const cols = ['#ffd36b', '#ff8fa3', '#7ee0ff', '#5dbb63', '#c3b2ff', '#ffb547'];
-    c.innerHTML = Array.from({ length: 70 }, (_, k) => `<i style="left:${(k * 37) % 100}%;background:${cols[k % cols.length]};animation-delay:${(k % 10) * 0.12}s;animation-duration:${2.2 + (k % 5) * 0.35}s;--x:${((k * 53) % 120) - 60}px;--r:${(k * 47) % 360}deg;--y:${(k * 29) % 90}vh"></i>`).join('');
+    c.innerHTML = Array.from({ length: n }, (_, k) => `<i style="left:${(k * 37) % 100}%;background:${cols[k % cols.length]};animation-delay:${(k % 10) * 0.12}s;animation-duration:${2.2 + (k % 5) * 0.35}s;--x:${((k * 53) % 120) - 60}px;--r:${(k * 47) % 360}deg;--y:${(k * 29) % 90}vh"></i>`).join('');
     document.body.appendChild(c);
     setTimeout(() => c.remove(), 5000);
   }
@@ -43,7 +43,7 @@
       box.innerHTML = `<p class="pq-k">Resultat</p><p class="pq-score">${score} de ${Q.length}</p><p class="pq-q">${msg}</p>
         <button type="button" class="pq-again">Torna-hi</button>`;
       box.querySelector('.pq-again').onclick = () => { i = 0; score = 0; render(); };
-      if (score === Q.length) confetti();
+      if (score === Q.length) confetti(110);
       return;
     }
     const it = Q[i];
@@ -55,7 +55,7 @@
       b.onclick = () => {
         const why = it.opts.find(([t]) => t === b.textContent)[1];
         box.querySelectorAll('.pq-opts button').forEach((x) => { x.disabled = true; if (x.textContent === it.ok) x.classList.add('ok'); });
-        if (!why) { score++; b.classList.add('ok'); fb.innerHTML = '<b>Correcte!</b>'; }
+        if (!why) { score++; b.classList.add('ok'); fb.innerHTML = '<b>Correcte!</b>'; confetti(28); }
         else { b.classList.add('ko'); fb.innerHTML = `<b>No és això.</b> ${why}`; }
         const n = document.createElement('button');
         n.type = 'button'; n.className = 'pq-next'; n.textContent = i < Q.length - 1 ? 'Següent enigma' : 'Veure el resultat';
