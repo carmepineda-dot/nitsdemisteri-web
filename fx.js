@@ -12,6 +12,9 @@
     els.forEach((el) => io.observe(el));
   } else els.forEach((el) => el.classList.add('in'));
 
+  // Amb «reduir moviment», els vídeos no es reprodueixen sols
+  if (reduce) document.querySelectorAll('video[autoplay]').forEach((v) => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
+
   // Cuques de llum a la portada
   const hero = document.querySelector('.hero');
   if (hero && !reduce) {
