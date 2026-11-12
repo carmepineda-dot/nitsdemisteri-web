@@ -179,7 +179,7 @@ footer a { color: var(--ink2); }
 @media (max-width: 600px) { .pq-opts { grid-template-columns: 1fr; } .pq { padding: 18px; } }
 
 /* Poblat */
-.village-sec { background: linear-gradient(180deg, var(--bg2), #10241f); }
+.village-sec { background: radial-gradient(circle at 85% 0%, rgba(255, 214, 102, .14), transparent 45%), linear-gradient(180deg, #163a55 0%, #1d4a3e 100%); border-top: 1px solid rgba(255, 255, 255, .06); }
 .village-vid { margin: 0; border-radius: 22px; overflow: hidden; border: 5px solid #0a0f1c; box-shadow: 0 16px 40px rgba(0, 0, 0, .4); }
 .village-vid video { display: block; width: 100%; height: auto; }
 
