@@ -188,3 +188,5 @@ footer a { color: var(--ink2); }
 .confetti i { position: absolute; top: -20px; width: 10px; height: 14px; border-radius: 2px; opacity: .95; animation: confetti linear forwards; }
 .confetti i:nth-child(3n) { width: 8px; height: 8px; border-radius: 50%; }
 @keyframes confetti { to { transform: translate(var(--x), 110vh) rotate(calc(var(--r) + 540deg)); opacity: .9; } }
+.confetti.still i { animation: confettiFade 3.5s ease forwards !important; top: var(--y); transform: rotate(var(--r)); }
+@keyframes confettiFade { 0% { opacity: 0; } 10% { opacity: .95; } 75% { opacity: .95; } 100% { opacity: 0; } }
