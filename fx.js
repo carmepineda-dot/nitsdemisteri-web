@@ -15,6 +15,15 @@
   // Amb «reduir moviment», els vídeos no es reprodueixen sols
   if (reduce) document.querySelectorAll('video[autoplay]').forEach((v) => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
 
+  // Vídeo del poblat: alguns mòbils l'aturen (bucle, estalvi de bateria). Es torna a posar en marxa quan es veu.
+  const pv = document.getElementById('poblatVid');
+  if (pv && !reduce) {
+    const go = () => { const pr = pv.play(); if (pr && pr.catch) pr.catch(() => {}); };
+    pv.addEventListener('ended', () => { pv.currentTime = 0; go(); });
+    if ('IntersectionObserver' in window) new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? go() : pv.pause())), { threshold: 0.25 }).observe(pv);
+    setInterval(() => { if (!document.hidden && pv.paused && pv.getBoundingClientRect().top < innerHeight && pv.getBoundingClientRect().bottom > 0) go(); }, 2000);
+  }
+
   // Cuques de llum a la portada
   const hero = document.querySelector('.hero');
   if (hero && !reduce) {
