@@ -10,9 +10,9 @@
       opts: [['17:45', ''], ['18:45', "És l'error més habitual! En català es compten els quarts que han passat cap a l'hora que ve: tres quarts de sis vol dir que falta un quart per a les sis."], ['18:15', "Seria un quart de set. Tres quarts de sis és quan falta un quart per a les sis."], ['15:30', "Has llegit els nombres al revés. Tres quarts (45 minuts) camí de les sis: les 17:45."]],
     },
     {
-      k: '4t de primària', q: 'Quin tros de pizza és més gran: <b>1/4</b> o <b>1/8</b>?',
-      ok: '1/4',
-      opts: [['1/8', 'És l\'error més típic! Com més trossos fas de la pizza, més petit és cada tros: 1/8 és la meitat d\'1/4.'], ['1/4', ''], ['Són iguals', 'No: si parteixes la mateixa pizza en 4 o en 8, els trossos de 4 són el doble de grans.']],
+      k: '5è de primària', q: 'Quin tros de pizza és més gran: <b>3/4</b> o <b>5/8</b>?',
+      ok: '3/4',
+      opts: [['5/8', "Els nombres són més grans, però els trossos són més petits. Passa-ho a vuitens: 3/4 = 6/8, i 6/8 és més que 5/8."], ['3/4', ''], ['Són iguals', "Gairebé: 3/4 = 6/8, així que hi ha un vuitè de diferència."], ['No es pot saber', "Sí que es pot! Es posen les dues fraccions amb el mateix denominador: 3/4 = 6/8, que és més que 5/8."]],
     },
     {
       k: '6è de primària', q: 'Quant fa <b>3 + 4 × 5</b>?',
