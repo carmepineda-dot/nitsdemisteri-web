@@ -1,7 +1,7 @@
 // Analítica (Google Analytics 4) només amb consentiment previ.
 // Sense resposta o amb "Rebutja", no es carrega res de Google ni es posa cap galeta.
 (() => {
-  const GA_ID = 'G-XXXXXXXXXX'; // ID de mesura de GA4 (Administració → Fluxos de dades)
+  const GA_ID = 'G-738EGQL3PH'; // ID de mesura de GA4 (Administració → Fluxos de dades)
   const KEY = 'nits-galetes'; // 'si' | 'no'
   const ready = /^G-[A-Z0-9]{6,}$/.test(GA_ID) && GA_ID !== 'G-XXXXXXXXXX';
 
