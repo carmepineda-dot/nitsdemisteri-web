@@ -1,6 +1,6 @@
 # Nits de Misteri
 
-> Joc de matemàtiques en català per a nens i nenes de primària (de 1r a 6è, de 6 a 12 anys), per a tauleta i mòbil Android. Segueix el currículum de matemàtiques de primària de Catalunya (Decret 175/2022). Sense anuncis.
+> El joc d'aventures per aprendre mates en català, de 1r a 6è: cada nit un enigma, de dia el teu poblat; s'adapta al nivell de cada infant i li explica cada error. Per a nens i nenes de primària (de 1r a 6è, de 6 a 12 anys), per a tauleta i mòbil Android. Segueix el currículum de matemàtiques de primària de Catalunya (Decret 175/2022). Sense anuncis.
 
 - Cada aventura dura 12 nits; cada nit hi ha un enigma de mates. Amb les peces guanyades, l'infant construeix el seu poblat.
 - S'adapta al nivell de cada infant per habilitats (rellotge, càlcul, fraccions, geometria...).
