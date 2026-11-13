@@ -229,7 +229,7 @@ print('ok', len(GUIES))
 
 # ---------- Els reptes del joc ----------
 REPTES = [
- ('Enigma', 'Resoldre un problema amb història.', "L'infant llegeix una situació (al mercat, al bosc, al castell…) i tria la resposta correcta entre diverses opcions.", "Comprensió lectora de problemes, triar l'operació adequada i càlcul. És el repte que més s'acosta als problemes de l'escola.", '1r a 6è'),
+ ('Enigma', 'Resoldre un problema amb història.', "L'infant llegeix una situació (al mercat, al bosc, al castell…) i tria la resposta correcta entre diverses opcions.", "Comprensió lectora de problemes, triar l'operació adequada i càlcul. És el repte que més s'acosta als problemes de l'escola. Inclou també enigmes d'arrodonir (a la desena, la centena, el miler o els decimals) i d'estimar resultats, de 3r a 6è.", '1r a 6è'),
  ('Mans a la feina', 'Resoldre un repte manipulant, no triant.', "Pagar el preu just posant monedes i bitllets al moneder, plantar una bandera a la recta numèrica, repartir coses en cistells o construir un nombre amb plaques, barres i cubets.", "Diners, valor de posició (unitats, desenes, centenes), divisió com a repartiment i situar nombres, fraccions i decimals a la recta.", '1r a 6è'),
  ('Càlcul ràpid', 'Encertar una operació abans que s’apagui la foguera.', "Apareix una operació i l'infant escriu el resultat amb el teclat. Al panell d'adults es pot treure el temps.", "Càlcul mental i agilitat amb sumes, restes, multiplicacions i divisions, segons el curs.", '1r a 6è'),
  ('El pont trencat', 'Ordenar els taulons per poder creuar el riu.', "Cada tauló porta un nombre i s'han de col·locar de més petit a més gran (o al revés, segons diu el repte).", "Comparar i ordenar nombres naturals, decimals i fraccions.", '1r a 6è'),
