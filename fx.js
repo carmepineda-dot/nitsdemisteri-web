@@ -35,10 +35,11 @@
     const box = document.createElement('div');
     box.className = 'flies';
     box.setAttribute('aria-hidden', 'true');
-    for (let i = 0; i < 14; i++) {
+    const N = innerWidth < 820 ? 22 : 16;
+    for (let i = 0; i < N; i++) {
       const f = document.createElement('i');
       f.style.left = `${(i * 53) % 100}%`;
-      f.style.top = `${40 + ((i * 37) % 55)}%`;
+      f.style.top = `${6 + ((i * 37) % 88)}%`; // per tota la portada, també a prop del títol
       f.style.animationDelay = `${(i % 7) * -1.3}s, ${(i % 5) * -0.9}s`;
       f.style.animationDuration = `${9 + (i % 5) * 2}s, ${2.4 + (i % 4) * 0.6}s`;
       box.appendChild(f);
