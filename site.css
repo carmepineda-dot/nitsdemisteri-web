@@ -192,3 +192,8 @@ footer a { color: var(--ink2); }
 @keyframes confettiFade { 0% { opacity: 0; } 10% { opacity: .95; } 75% { opacity: .95; } 100% { opacity: 0; } }
 .faq-g { font-size: 22px; color: var(--fire); margin: 32px 0 12px; }
 .faq-more { margin-top: 20px; }
+
+/* Objectiu del joc */
+.goal { max-width: 720px; margin: 0 auto 32px; padding: 18px 22px; border-radius: 20px; background: rgba(255, 181, 71, .1); border: 1px solid rgba(255, 181, 71, .45); }
+.goal-k { display: block; font: 800 14px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--fire); margin-bottom: 6px; }
+.goal p { margin: 0; color: var(--ink); font-size: 20px; }

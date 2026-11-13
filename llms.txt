@@ -2,7 +2,7 @@
 
 > El joc d'aventures per aprendre mates en català, de 1r a 6è: cada nit un enigma, de dia el teu poblat; s'adapta al nivell de cada infant i li explica cada error. Per a nens i nenes de primària (de 1r a 6è, de 6 a 12 anys), per a tauleta i mòbil Android. Segueix el currículum de matemàtiques de primària de Catalunya (Decret 175/2022). Sense anuncis.
 
-- Cada aventura dura 12 nits; cada nit hi ha un enigma de mates. Amb les peces guanyades, l'infant construeix el seu poblat.
+- Objectiu del joc: cada nit s'amaga un enigma; si el resols, guanyes una peça per construir el teu refugi i, després, el teu poblat. Com més aventures acabis, més gran serà. Cada aventura dura 12 nits.
 - S'adapta al nivell de cada infant per habilitats (rellotge, càlcul, fraccions, geometria...).
 - Quan s'equivoca, detecta quin error ha fet i li explica com es fa; si l'error es repeteix, un mussol li ensenya un truc amb dibuixos.
 - Panell per a adults amb PIN: progrés per habilitats, errors treballats, límit de temps diari, fins a 6 germans.
