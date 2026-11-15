@@ -16,7 +16,13 @@
 - [Inici](https://nitsdemisteri.cat/): presentació del joc
 - [Preguntes freqüents](https://nitsdemisteri.cat/preguntes/): edats, currículum, adaptació, errors, preu, dades, instal·lació
 - [Els reptes](https://nitsdemisteri.cat/reptes/): els 12 tipus de repte, amb objectiu i per a què serveixen
-- [Guies per a famílies](https://nitsdemisteri.cat/guies/): taules de multiplicar, rellotge, fraccions, ajudar a casa
+- [Guies per a famílies](https://nitsdemisteri.cat/guies/): taules de multiplicar, rellotge, fraccions, càlcul mental, reforç de mates, ajudar a casa
+  - [Taules de multiplicar](https://nitsdemisteri.cat/guies/taules-de-multiplicar/): trucs per aprendre-les entenent-les
+  - [El rellotge](https://nitsdemisteri.cat/guies/aprendre-el-rellotge/): de les hores en punt als quarts en català
+  - [Les fraccions](https://nitsdemisteri.cat/guies/fraccions-primaria/): com explicar-les de 3r a 6è
+  - [Càlcul mental](https://nitsdemisteri.cat/guies/calcul-mental/): estratègies per curs i jocs per fer a casa
+  - [Reforç de mates](https://nitsdemisteri.cat/guies/reforc-mates-primaria/): com saber si cal i què funciona
+  - [Ajudar amb les mates a casa](https://nitsdemisteri.cat/guies/ajudar-amb-les-mates-a-casa/): consells per acompanyar sense discussions
 - [Política de privacitat](https://nitsdemisteri.cat/privacitat/)
 
 Contacte: nitsdemisteri.joc@gmail.com
