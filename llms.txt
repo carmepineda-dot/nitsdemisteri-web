@@ -23,6 +23,10 @@
   - [Càlcul mental](https://nitsdemisteri.cat/guies/calcul-mental/): estratègies per curs i jocs per fer a casa
   - [Reforç de mates](https://nitsdemisteri.cat/guies/reforc-mates-primaria/): com saber si cal i què funciona
   - [Ajudar amb les mates a casa](https://nitsdemisteri.cat/guies/ajudar-amb-les-mates-a-casa/): consells per acompanyar sense discussions
+  - [Aprendre a dividir](https://nitsdemisteri.cat/guies/aprendre-a-dividir/): com aprèn a dividir un infant de primària, pas a pas
+  - [Sumes i restes amb portada](https://nitsdemisteri.cat/guies/sumes-i-restes-amb-portada/): què és la portada, per què costa i com ajudar
+  - [Problemes de mates](https://nitsdemisteri.cat/guies/problemes-de-mates-primaria/): per què no entén els enunciats i estratègies per resoldre'ls
+  - [Geometria](https://nitsdemisteri.cat/guies/geometria-primaria/): figures, perímetre, àrea i simetria a primària
 - [Política de privacitat](https://nitsdemisteri.cat/privacitat/)
 
 Contacte: nitsdemisteri.joc@gmail.com
