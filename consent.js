@@ -38,7 +38,7 @@
     box.className = 'cookie';
     box.setAttribute('role', 'dialog');
     box.setAttribute('aria-label', 'Galetes');
-    box.innerHTML = `<p>Fem servir galetes d'analítica (Google Analytics) per saber quantes persones visiten la web i millorar-la. Només s'activen si les acceptes. <a href="/galetes/">Més informació</a></p>
+    box.innerHTML = `<p>Fem servir galetes d'analítica (Google Analytics) per saber quantes persones visiten la web i millorar-la. Només s'activen si les acceptes. <a href="/galetes/">Política de galetes</a></p>
       <div class="cookie-btns"><button type="button" data-c="no">Rebutja</button><button type="button" data-c="si">Accepta</button></div>`;
     box.addEventListener('click', (e) => {
       const v = e.target.closest('button')?.dataset.c;
