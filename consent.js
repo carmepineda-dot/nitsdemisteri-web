@@ -54,6 +54,18 @@
   // Enllaç del peu "Galetes": torna a preguntar.
   window.nitsGaletes = () => { document.getElementById('cookieBox')?.remove(); banner(); };
 
+  // Conversions: clic als enllaços de Google Play (botó de descàrrega o enllaç de prova).
+  // Només es mesura si l'usuari ha acceptat (window.gtag només existeix després del consentiment).
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href*="play.google.com"]');
+    if (!a || !window.gtag) return;
+    window.gtag('event', 'play_click', {
+      play_type: /\/apps\/testing\//.test(a.href) ? 'tester' : 'store',
+      link_url: a.href,
+      page_path: location.pathname,
+    });
+  });
+
   const v = get();
   if (v === 'si') loadGA();
   else if (v !== 'no') (document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', banner) : banner());
