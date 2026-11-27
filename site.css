@@ -199,3 +199,9 @@ footer a { color: var(--ink2); }
 .goal p { margin: 0; color: var(--ink); font-size: 20px; }
 .hero .goal-lead { color: var(--moon); font-size: clamp(18px, 2.2vw, 21px); border-left: 4px solid var(--fire); padding-left: 14px; margin-top: 14px; }
 .hero .lead-sm { color: var(--ink2); font-size: 17px; margin: 0; }
+
+/* Icones de xarxes socials / redes sociales al peu */
+footer .social { display: flex; align-items: center; gap: 4px; margin-left: -9px; }
+footer .social a { display: inline-flex; padding: 9px; margin: -9px 0; border-radius: 50%; color: var(--ink2); transition: color .15s, background .15s; }
+footer .social a:hover, footer .social a:focus-visible { color: var(--ink); background: rgba(255, 255, 255, .08); }
+footer .social svg { display: block; }
