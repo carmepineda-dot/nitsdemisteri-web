@@ -201,7 +201,8 @@ footer a { color: var(--ink2); }
 .hero .lead-sm { color: var(--ink2); font-size: 17px; margin: 0; }
 
 /* Icones de xarxes socials / redes sociales al peu */
-footer .social { display: flex; align-items: center; gap: 4px; margin-left: -9px; }
+footer nav { align-items: center; }
+footer .social { display: flex; align-items: center; gap: 4px; margin: 0 -9px; }
 footer .social a { display: inline-flex; padding: 9px; margin: -9px 0; border-radius: 50%; color: var(--ink2); transition: color .15s, background .15s; }
 footer .social a:hover, footer .social a:focus-visible { color: var(--ink); background: rgba(255, 255, 255, .08); }
 footer .social svg { display: block; }
